@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyGirls</string>
+    <string name="prob1">PMS</string>
+    <string name="prob2">Fertilidad</string>
+    <string name="prob3">Periodo</string>
+    <string name="probVal1">Muy baja</string>
+    <string name="probVal2">Bajo</string>
+    <string name="probVal3">Alto</string>
+    <string name="probVal4">Muy alto</string>
+    <string name="probVal5">Desconocido</string>
+    <string name="df1">Do</string>
+    <string name="df2">Lu</string>
+    <string name="df3">Ma</string>
+    <string name="df4">Mi</string>
+    <string name="df5">Ju</string>
+    <string name="df6">Vi</string>
+    <string name="df7">Sa</string>
+    <string name="info_text">Creado por Atax LLC. Visita Ataxmobile.com para ver más aplicaciones</string>
+    <string name="info_title">Acerca de MyGirls</string>
+    <string name="spinnerTitle">Chica:</string>
+    <string name="spinnerTitle1">Duración del ciclo</string>
+    <string name="spinnerTitle2">Duración del periodo</string>
+    <string name="gName">Nombre</string>
+    <string name="firstDay">Primer día del ciclo</string>
+    <string name="dateDialog">Por favor, selecciona la fecha</string>
+    <string name="noGirlsList">No hay ninguna chica en la lista. Utiliza el icono de Agregar Chica para añadir una.</string>
+    <string name="noUniqueName1">Parece que la chica</string>
+    <string name="noUniqueName2">ya existe. Selecciona otro nombre.</string>
+    <string name="defGirlName">Querida</string>
+    <string name="yes">OK</string>
+    <string name="TitleDBEmpty">La lista está vacía.</string>
+    <string name="infoTDay">Hoy</string>
+    <string name="infoPDay">Periodo</string>
+    <string name="infoFDay">Fertilidad</string>
+    <string name="infoODay">Ovulación</string>
+    <string name="infoIInfo">Esta\n
+        página</string>
+    <string name="infoICalendar">Vista del\n
+        calendario</string>
+    <string name="infoIAdd">Añadir una\n
+        nueva chica\n
+        a su lista</string>
+    <string name="infoIList">Editar\n
+        las chicas\n
+        de tu lista</string>
+    <string name="infoIShare">Comparte la aplicación con tus amigos</string>
+    <string name="infoIRate">Valora esta aplicación</string>
+    <string name="infoDays">Días</string>
+    <string name="ShareSubj">MyGirls: Calendario y seguimiento de la fertilidad</string>
+    <string name="ShareMsg">Deja que te recomiende esta aplicación</string>
+    <string name="ShareWay">Selecciona una</string>
+    <string name="separProbs">Probabilidades</string>
+    <string name="MessageText">No hay ninguna chica en la lista. Utiliza el icono de Agregar Chica para añadir una.</string>
+    <string name="d1">Duración del ciclo</string>
+    <string name="d2">Duración del periodo</string>
+</resources>

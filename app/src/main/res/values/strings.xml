@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">MyGirls</string>
+    <string name="prob1">PMS</string>
+    <string name="prob2">Fertility</string>
+    <string name="prob3">Period</string>
+    <string name="probVal1">Very low</string>
+    <string name="probVal2">Low</string>
+    <string name="probVal3">High</string>
+    <string name="probVal4">Very high</string>
+    <string name="probVal5">Unknown</string>
+    <string name="df1">S</string>
+    <string name="df2">M</string>
+    <string name="df3">T</string>
+    <string name="df4">S</string>
+    <string name="df5">W</string>
+    <string name="df6">T</string>
+    <string name="df7">S</string>
+    <string name="info_text">Created by Atax LLC. Visit Ataxmobile.com for more app</string>
+    <string name="info_title">About MyGirls</string>
+    <string name="spinnerTitle">Girl:</string>
+    <string name="spinnerTitle1">Cycle length</string>
+    <string name="spinnerTitle2">Period length</string>
+    <string name="gName">Name</string>
+    <string name="firstDay">First cycle day</string>
+    <string name="d1">Cycle length</string>
+    <string name="d2">Period length</string>
+    <string name="dateDialog">Please select date</string>
+    <string name="noGirlsList">There is no girl in the list. Use AddGirl icon to add one.</string>
+    <string name="noUniqueName1">Looks like girl</string>
+    <string name="noUniqueName2">already exist. Choose another name.</string>
+    <string name="defGirlName">My dear</string>
+    <string name="yes">OK</string>
+    <string name="TitleDBEmpty">List is empty!</string>
+    <string name="MessageText">Looks like there is no girl in the list. Use AddGirl icon to add one.</string>
+    <string name="infoTDay">Today</string>
+    <string name="infoPDay">Period</string>
+    <string name="infoFDay">Fertility</string>
+    <string name="infoODay">Ovulation</string>
+    <string name="infoIInfo">This\n
+                        page</string>
+    <string name="infoICalendar">Calendar\n
+                        view</string>
+    <string name="infoIAdd">Add new girl\n
+                        to your list</string>
+    <string name="infoIList">Edit girls\n
+                        in your list</string>
+    <string name="infoIShare">Share app with friends</string>
+    <string name="infoIRate">Rate this app</string>
+    <string name="infoDays">Days</string>
+    <string name="ShareSubj">MyGirls: Fertility calendar and Tracker</string>
+    <string name="ShareMsg">Let me recommend you this application</string>
+    <string name="ShareWay">choose one</string>
+    <string name="separProbs">Probabilities</string>
+</resources>

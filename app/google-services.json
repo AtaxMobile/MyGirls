@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "605624634465",
+    "project_id": "mygirls-6c83b",
+    "storage_bucket": "mygirls-6c83b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605624634465:android:6798c74aa629a19f2f6e20",
+        "android_client_info": {
+          "package_name": "com.ataxmobile.mygirls"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605624634465-0mebi3243v8tr7mmh8muo8vvacdc8oe5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9f7914Svtzq1gJV9RCtcAFzN_sGx061s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605624634465-0mebi3243v8tr7mmh8muo8vvacdc8oe5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

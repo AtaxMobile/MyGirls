@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CL1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/info_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view1l"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#c2c2c2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/TextView2"
+        app:layout_constraintTop_toBottomOf="@+id/TextView1" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infoDays"
+        app:layout_constraintLeft_toRightOf="@+id/view1l"
+        app:layout_constraintRight_toLeftOf="@+id/view1r"
+        app:layout_constraintTop_toTopOf="@+id/view1l"
+        app:layout_constraintBottom_toBottomOf="@+id/view1l" />
+
+    <View
+        android:id="@+id/view1r"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#c2c2c2"
+        app:layout_constraintLeft_toRightOf="@+id/TextView2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView1"
+        />
+
+    <Button
+        android:id="@+id/bc1_0"
+        style="@style/CalendButton"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:drawableBottom="@drawable/shape_null_mark"
+        android:drawablePadding="0dp"
+        android:text="01"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/bc1_1"
+        app:layout_constraintTop_toBottomOf="@+id/view1l" />
+
+    <TextView
+        android:id="@+id/TDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infoTDay"
+        app:layout_constraintLeft_toLeftOf="@+id/bc1_0"
+        app:layout_constraintRight_toRightOf="@+id/bc1_0"
+        app:layout_constraintTop_toBottomOf="@+id/bc1_0" />
+
+    <Button
+        android:id="@+id/bc1_1"
+        style="@style/CalendButton"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:drawableBottom="@drawable/shape_md_mark"
+        android:drawablePadding="0dp"
+        android:text="02"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/bc1_0"
+        app:layout_constraintRight_toLeftOf="@+id/bc1_2"
+        app:layout_constraintTop_toBottomOf="@+id/view1l" />
+
+    <TextView
+        android:id="@+id/PDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infoPDay"
+        app:layout_constraintLeft_toLeftOf="@+id/bc1_1"
+        app:layout_constraintRight_toRightOf="@+id/bc1_1"
+        app:layout_constraintTop_toBottomOf="@+id/bc1_1" />
+
+    <Button
+        android:id="@+id/bc1_2"
+        style="@style/CalendButton"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:drawableBottom="@drawable/shape_fert_mark"
+        android:drawablePadding="0dp"
+        android:text="03"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/bc1_1"
+        app:layout_constraintRight_toLeftOf="@+id/bc1_3"
+        app:layout_constraintTop_toBottomOf="@+id/view1l" />
+
+    <TextView
+        android:id="@+id/FDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infoFDay"
+        app:layout_constraintLeft_toLeftOf="@+id/bc1_2"
+        app:layout_constraintRight_toRightOf="@+id/bc1_2"
+        app:layout_constraintTop_toBottomOf="@+id/bc1_2" />
+
+    <Button
+        android:id="@+id/bc1_3"
+        style="@style/CalendButton"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:drawableBottom="@drawable/shape_hm_mark"
+        android:drawablePadding="0dp"
+        android:text="04"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/bc1_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1l" />
+
+    <TextView
+        android:id="@+id/ODay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infoODay"
+        app:layout_constraintLeft_toLeftOf="@+id/bc1_3"
+        app:layout_constraintRight_toRightOf="@+id/bc1_3"
+        app:layout_constraintTop_toBottomOf="@+id/bc1_3" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#c2c2c2"
+        android:clickable="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FDay" />
+
+    <ImageView
+        android:id="@+id/imgInfoInfo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_v_info"
+        app:layout_constraintRight_toRightOf="@+id/bc1_0"
+        app:layout_constraintLeft_toLeftOf="@+id/bc1_0"
+        app:layout_constraintTop_toBottomOf="@id/view2" />
+
+    <TextView
+        android:id="@+id/iInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="@string/infoIInfo"
+        app:layout_constraintLeft_toLeftOf="@+id/imgInfoInfo"
+        app:layout_constraintRight_toRightOf="@+id/imgInfoInfo"
+        app:layout_constraintTop_toBottomOf="@+id/imgInfoInfo" />
+
+    <ImageView
+        android:id="@+id/imgInfoCalendar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_v_calendar"
+        app:layout_constraintEnd_toEndOf="@+id/bc1_1"
+        app:layout_constraintLeft_toLeftOf="@id/bc1_1"
+        app:layout_constraintRight_toRightOf="@id/bc1_1"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/iCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="@string/infoICalendar"
+        app:layout_constraintLeft_toLeftOf="@+id/imgInfoCalendar"
+        app:layout_constraintRight_toRightOf="@+id/imgInfoCalendar"
+        app:layout_constraintTop_toBottomOf="@+id/imgInfoCalendar" />
+
+    <ImageView
+        android:id="@+id/imgInfoAdd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_v_add"
+        app:layout_constraintLeft_toLeftOf="@+id/bc1_2"
+        app:layout_constraintRight_toRightOf="@id/bc1_2"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/iAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/infoIAdd"
+        app:layout_constraintLeft_toLeftOf="@+id/imgInfoAdd"
+        app:layout_constraintRight_toRightOf="@+id/imgInfoAdd"
+        app:layout_constraintTop_toBottomOf="@+id/imgInfoAdd" />
+
+    <ImageView
+        android:id="@+id/imgInfoList"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_v_edit"
+        app:layout_constraintLeft_toLeftOf="@id/bc1_3"
+        app:layout_constraintRight_toRightOf="@id/bc1_3"
+        app:layout_constraintTop_toBottomOf="@id/view2" />
+
+    <TextView
+        android:id="@+id/iList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/infoIList"
+        app:layout_constraintLeft_toLeftOf="@+id/imgInfoList"
+        app:layout_constraintRight_toRightOf="@+id/imgInfoList"
+        app:layout_constraintTop_toBottomOf="@+id/imgInfoList" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#c2c2c2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iAdd" />
+
+    <ImageButton
+        android:id="@+id/imgButtonShare"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:onClick="onButShareClick"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_v_share"
+        android:stateListAnimator="@null"
+        android:translationZ="4dp"
+        app:layout_constraintLeft_toLeftOf="@id/imgInfoInfo"
+        app:layout_constraintRight_toRightOf="@id/imgInfoInfo"
+        app:layout_constraintTop_toBottomOf="@id/view3" />
+
+    <TextView
+        android:id="@+id/iShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="@string/infoIShare"
+        app:layout_constraintBottom_toBottomOf="@+id/imgButtonShare"
+        app:layout_constraintTop_toTopOf="@+id/imgButtonShare"
+        app:layout_constraintLeft_toRightOf="@+id/imgButtonShare" />
+    <ImageButton
+        android:id="@+id/imgButtonRate"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:onClick="onButRateClick"
+        android:scaleType="fitCenter"
+        android:stateListAnimator="@null"
+        android:translationZ="4dp"
+        android:src="@drawable/ic_v_star_shooting"
+        app:layout_constraintLeft_toLeftOf="@id/imgInfoInfo"
+        app:layout_constraintRight_toRightOf="@id/imgInfoInfo"
+        app:layout_constraintTop_toBottomOf="@id/imgButtonShare" />
+
+    <TextView
+        android:id="@+id/iRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="@string/infoIRate"
+        app:layout_constraintBottom_toBottomOf="@+id/imgButtonRate"
+        app:layout_constraintTop_toTopOf="@+id/imgButtonRate"
+        app:layout_constraintLeft_toRightOf="@+id/imgButtonRate" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5155761403306761/5570833130"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/imgInfo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onButBarClick"
+        android:src="@drawable/ic_v_info_selected"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imgCalendar" />
+
+    <ImageView
+        android:id="@+id/imgCalendar"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onButBarClick"
+        android:src="@drawable/ic_v_calendar"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintLeft_toRightOf="@+id/imgInfo"
+        app:layout_constraintRight_toLeftOf="@+id/imgAdd" />
+
+    <ImageView
+        android:id="@+id/imgAdd"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onButBarClick"
+        android:src="@drawable/ic_v_add"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintLeft_toRightOf="@+id/imgCalendar"
+        app:layout_constraintRight_toLeftOf="@+id/imgEdit" />
+
+    <ImageView
+        android:id="@+id/imgEdit"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onButBarClick"
+        android:src="@drawable/ic_v_edit"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintLeft_toRightOf="@+id/imgAdd"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

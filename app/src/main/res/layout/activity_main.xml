@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CL1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:prompt="@string/spinnerTitle"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCurrDate"
+        app:layout_constraintStart_toStartOf="@+id/textViewCurrDate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCurrDate"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <View
+        android:id="@+id/view1l"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:background="#c2c2c2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/TextView2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCurrDate" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/separProbs"
+        app:layout_constraintLeft_toRightOf="@+id/view1l"
+        app:layout_constraintRight_toLeftOf="@+id/view1r"
+        app:layout_constraintTop_toTopOf="@+id/view1l"
+        app:layout_constraintBottom_toBottomOf="@+id/view1l" />
+
+    <View
+        android:id="@+id/view1r"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:background="#c2c2c2"
+        app:layout_constraintLeft_toRightOf="@+id/TextView2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCurrDate" />
+
+    <TextView
+        android:id="@+id/textViewP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/prob1"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/textViewP2"
+        app:layout_constraintTop_toBottomOf="@id/TextView2" />
+
+    <TextView
+        android:id="@+id/textViewP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/prob2"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/textViewP1"
+        app:layout_constraintRight_toLeftOf="@+id/textViewP3"
+        app:layout_constraintTop_toBottomOf="@+id/TextView2" />
+
+    <TextView
+        android:id="@+id/textViewP3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/prob3"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/textViewP2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView2" />
+
+    <TextView
+        android:id="@+id/textViewP1Val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/probVal4"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewP1"
+        app:layout_constraintRight_toRightOf="@+id/textViewP1"
+        app:layout_constraintTop_toBottomOf="@id/textViewP1" />
+
+    <TextView
+        android:id="@+id/textViewP2Val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/probVal4"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewP2"
+        app:layout_constraintRight_toRightOf="@+id/textViewP2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewP2" />
+
+    <TextView
+        android:id="@+id/textViewP3Val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/probVal4"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewP3"
+        app:layout_constraintRight_toRightOf="@+id/textViewP3"
+        app:layout_constraintTop_toBottomOf="@id/textViewP3" />
+    <View
+        android:id="@+id/viewSep"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:background="#c2c2c2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewP3Val" />
+
+    <ImageView
+        android:id="@+id/bdLeft"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onButCLClick"
+        android:src="@drawable/ic_v_chevron_left_box_outline"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCMonth"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewCMonth"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCMonth"/>
+
+    <TextView
+        android:id="@+id/textViewCMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCYear"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/bdLeft"
+        app:layout_constraintTop_toBottomOf="@+id/viewSep" />
+
+    <TextView
+        android:id="@+id/textViewCYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/bdRight"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/textViewCMonth"
+        app:layout_constraintTop_toBottomOf="@+id/viewSep" />
+
+    <ImageView
+        android:id="@+id/bdRight"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onButCRClick"
+        android:src="@drawable/ic_v_chevron_right_box_outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/textViewCYear"
+        app:layout_constraintTop_toTopOf="@+id/textViewCYear"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCYear" />
+
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:minWidth="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/df1"
+        android:textColor="@android:color/holo_red_light"
+        app:backgroundTint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCMonth" />
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:minWidth="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/df2"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/view1"
+        app:layout_constraintRight_toLeftOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCMonth"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:minWidth="10dp"
+        android:text="@string/df3"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/view2"
+        app:layout_constraintRight_toLeftOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCMonth"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:minWidth="10dp"
+        android:text="@string/df4"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/view3"
+        app:layout_constraintRight_toLeftOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCMonth"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <TextView
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/df5"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        android:minWidth = "10dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        app:layout_constraintRight_toLeftOf="@+id/view6"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintLeft_toRightOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCMonth" />
+    <TextView
+        android:id="@+id/view6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/df6"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        android:minWidth = "10dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        app:layout_constraintRight_toLeftOf="@+id/view7"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintLeft_toRightOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCMonth" />
+    <TextView
+        android:id="@+id/view7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/df7"
+        app:backgroundTint="@color/white"
+        android:textColor="@android:color/holo_red_light"
+        android:minWidth = "10dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintLeft_toRightOf="@+id/view6"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCMonth" />
+
+    <Button
+        android:id="@+id/bc1_1"
+        android:textColor="@android:color/darker_gray"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view1"
+        app:layout_constraintLeft_toLeftOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc1_2"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view2"
+        app:layout_constraintLeft_toLeftOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc1_3"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view3"
+        app:layout_constraintLeft_toLeftOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc1_4"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view4"
+        app:layout_constraintLeft_toLeftOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc1_5"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view5"
+        app:layout_constraintLeft_toLeftOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc1_6"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view6"
+        app:layout_constraintLeft_toLeftOf="@+id/view6"
+        app:layout_constraintTop_toBottomOf="@+id/view6"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc1_7"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view7"
+        app:layout_constraintLeft_toLeftOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/view7"
+        style="@style/CalendButton" />
+
+    <Button
+        android:id="@+id/bc2_1"
+        android:textColor="@android:color/darker_gray"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view1"
+        app:layout_constraintLeft_toLeftOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/bc1_1"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc2_2"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view2"
+        app:layout_constraintLeft_toLeftOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/bc1_2"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc2_3"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view3"
+        app:layout_constraintLeft_toLeftOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/bc1_3"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc2_4"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view4"
+        app:layout_constraintLeft_toLeftOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/bc1_4"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc2_5"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view5"
+        app:layout_constraintLeft_toLeftOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/bc1_5"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc2_6"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view6"
+        app:layout_constraintLeft_toLeftOf="@+id/view6"
+        app:layout_constraintTop_toBottomOf="@+id/bc1_6"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc2_7"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view7"
+        app:layout_constraintLeft_toLeftOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/bc1_7"
+        style="@style/CalendButton" />
+
+    <Button
+        android:id="@+id/bc3_1"
+        android:textColor="@android:color/darker_gray"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view1"
+        app:layout_constraintLeft_toLeftOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/bc2_1"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc3_2"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view2"
+        app:layout_constraintLeft_toLeftOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/bc2_2"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc3_3"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view3"
+        app:layout_constraintLeft_toLeftOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/bc2_3"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc3_4"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view4"
+        app:layout_constraintLeft_toLeftOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/bc2_4"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc3_5"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view5"
+        app:layout_constraintLeft_toLeftOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/bc2_5"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc3_6"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view6"
+        app:layout_constraintLeft_toLeftOf="@+id/view6"
+        app:layout_constraintTop_toBottomOf="@+id/bc2_6"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc3_7"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view7"
+        app:layout_constraintLeft_toLeftOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/bc2_7"
+        style="@style/CalendButton" />
+
+    <Button
+        android:id="@+id/bc4_1"
+        android:textColor="@android:color/darker_gray"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view1"
+        app:layout_constraintLeft_toLeftOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/bc3_1"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc4_2"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view2"
+        app:layout_constraintLeft_toLeftOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/bc3_2"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc4_3"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view3"
+        app:layout_constraintLeft_toLeftOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/bc3_3"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc4_4"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view4"
+        app:layout_constraintLeft_toLeftOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/bc3_4"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc4_5"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view5"
+        app:layout_constraintLeft_toLeftOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/bc3_5"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc4_6"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view6"
+        app:layout_constraintLeft_toLeftOf="@+id/view6"
+        app:layout_constraintTop_toBottomOf="@+id/bc3_6"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc4_7"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view7"
+        app:layout_constraintLeft_toLeftOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/bc3_7"
+        style="@style/CalendButton" />
+
+    <Button
+        android:id="@+id/bc5_1"
+        android:textColor="@android:color/darker_gray"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view1"
+        app:layout_constraintLeft_toLeftOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/bc4_1"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc5_2"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view2"
+        app:layout_constraintLeft_toLeftOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/bc4_2"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc5_3"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view3"
+        app:layout_constraintLeft_toLeftOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/bc4_3"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc5_4"
+         android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view4"
+        app:layout_constraintLeft_toLeftOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/bc4_4"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc5_5"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view5"
+        app:layout_constraintLeft_toLeftOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/bc4_5"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc5_6"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view6"
+        app:layout_constraintLeft_toLeftOf="@+id/view6"
+        app:layout_constraintTop_toBottomOf="@+id/bc4_6"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc5_7"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view7"
+        app:layout_constraintLeft_toLeftOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/bc4_7"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc6_1"
+        android:textColor="@android:color/darker_gray"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view1"
+        app:layout_constraintLeft_toLeftOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/bc5_1"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc6_2"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view2"
+        app:layout_constraintLeft_toLeftOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/bc5_2"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc6_3"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view3"
+        app:layout_constraintLeft_toLeftOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/bc5_3"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc6_4"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view4"
+        app:layout_constraintLeft_toLeftOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/bc5_4"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc6_5"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view5"
+        app:layout_constraintLeft_toLeftOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/bc5_5"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc6_6"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view6"
+        app:layout_constraintLeft_toLeftOf="@+id/view6"
+        app:layout_constraintTop_toBottomOf="@+id/bc5_6"
+        style="@style/CalendButton" />
+    <Button
+        android:id="@+id/bc6_7"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/view7"
+        app:layout_constraintLeft_toLeftOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/bc5_7"
+        style="@style/CalendButton" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5155761403306761/5570833130">
+    </com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/imgInfo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onButBarClick"
+        android:src="@drawable/ic_v_info"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imgCalendar" />
+    <ImageView
+        android:id="@+id/imgCalendar"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onButBarClick"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintLeft_toRightOf="@+id/imgInfo"
+        app:layout_constraintRight_toLeftOf="@+id/imgAdd"
+        android:src="@drawable/ic_v_calendar_selected" />
+    <ImageView
+        android:id="@+id/imgAdd"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onButBarClick"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintLeft_toRightOf="@+id/imgCalendar"
+        app:layout_constraintRight_toLeftOf="@+id/imgEdit"
+        android:src="@drawable/ic_v_add" />
+    <ImageView
+        android:id="@+id/imgEdit"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onButBarClick"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintLeft_toRightOf="@+id/imgAdd"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/ic_v_edit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
