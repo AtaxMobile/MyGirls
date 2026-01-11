@@ -305,18 +305,6 @@
         app:layout_constraintTop_toTopOf="@+id/imgButtonRate"
         app:layout_constraintLeft_toRightOf="@+id/imgButtonRate" />
 
-    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/adView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-5155761403306761/5570833130"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
-
     <ImageView
         android:id="@+id/imgInfo"
         android:layout_width="40dp"
@@ -324,7 +312,7 @@
         android:layout_marginBottom="8dp"
         android:onClick="onButBarClick"
         android:src="@drawable/ic_v_info_selected"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/imgCalendar" />
 
@@ -335,7 +323,7 @@
         android:layout_marginBottom="8dp"
         android:onClick="onButBarClick"
         android:src="@drawable/ic_v_calendar"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/imgInfo"
         app:layout_constraintRight_toLeftOf="@+id/imgAdd" />
 
@@ -346,7 +334,7 @@
         android:layout_marginBottom="8dp"
         android:onClick="onButBarClick"
         android:src="@drawable/ic_v_add"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/imgCalendar"
         app:layout_constraintRight_toLeftOf="@+id/imgEdit" />
 
@@ -357,7 +345,7 @@
         android:layout_marginBottom="8dp"
         android:onClick="onButBarClick"
         android:src="@drawable/ic_v_edit"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/imgAdd"
         app:layout_constraintRight_toRightOf="parent" />
 

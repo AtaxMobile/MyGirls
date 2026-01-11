@@ -13,12 +13,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -43,7 +37,7 @@ public class AddActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
-        AdView mAdView = new AdView(this);
+
         spinnerD1 = (Spinner) findViewById(R.id.spinnerD1);
         spinnerD2 = (Spinner) findViewById(R.id.spinnerD2);
         // fill spinner with values
@@ -121,17 +115,6 @@ public class AddActivity extends AppCompatActivity {
                 mDatePicker.show();
             }
         });
-
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-
-        // lets monetize
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
     }
 
