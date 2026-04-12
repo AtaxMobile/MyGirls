@@ -42,11 +42,11 @@ public class AddActivity extends AppCompatActivity {
         spinnerD2 = (Spinner) findViewById(R.id.spinnerD2);
         // fill spinner with values
         final List<String> d1List = new ArrayList<>(Arrays.asList(d1Vals));
-        final ArrayAdapter<String> spinner1ArrayAdapter = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, d1List);
+        final ArrayAdapter<String> spinner1ArrayAdapter = new ArrayAdapter<>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, d1List);
         spinner1ArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerD1.setAdapter(spinner1ArrayAdapter);
         final List<String> d2List = new ArrayList<>(Arrays.asList(d2Vals));
-        final ArrayAdapter<String> spinner2ArrayAdapter = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, d2List);
+        final ArrayAdapter<String> spinner2ArrayAdapter = new ArrayAdapter<>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, d2List);
         spinner2ArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerD2.setAdapter(spinner2ArrayAdapter);
 
