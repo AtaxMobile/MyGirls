@@ -12,4 +12,6 @@
     <color name="high">#FFC90000</color>
     <color name="low">#FF00C900</color>
     <color name="very_low">#FF12F012</color>
+    <color name="switch_track_light">#FFE0E0E0</color>
+    <color name="switch_thumb_light">#FFFFFFFF</color>
 </resources>

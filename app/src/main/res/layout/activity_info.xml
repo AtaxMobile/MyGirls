@@ -305,6 +305,20 @@
         app:layout_constraintTop_toTopOf="@+id/imgButtonRate"
         app:layout_constraintLeft_toRightOf="@+id/imgButtonRate" />
 
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:checked="false"
+        android:thumbTint="@color/switch_thumb_light"
+        android:trackTint="@color/switch_track_light"
+        app:thumbTintNight="@color/switch_thumb_dark"
+        app:trackTintNight="@color/switch_track_dark"
+        app:layout_constraintBottom_toTopOf="@+id/imgInfo"
+        app:layout_constraintLeft_toLeftOf="@id/imgButtonRate"
+        app:layout_constraintRight_toRightOf="@id/imgButtonRate" />
+
     <ImageView
         android:id="@+id/imgInfo"
         android:layout_width="40dp"
@@ -349,5 +363,15 @@
         app:layout_constraintLeft_toRightOf="@+id/imgAdd"
         app:layout_constraintRight_toRightOf="parent" />
 
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#c2c2c2"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

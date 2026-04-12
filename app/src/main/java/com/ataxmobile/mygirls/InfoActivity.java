@@ -9,7 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
+// For themes switch
+import androidx.appcompat.app.AppCompatDelegate;
+import android.content.SharedPreferences;
+import androidx.appcompat.widget.SwitchCompat;
 // ToDo delete obsolete library import com.google.android.play.core.tasks.Task;
 import com.google.android.gms.tasks.Task;
 import com.google.android.play.core.review.ReviewInfo;
@@ -22,6 +25,12 @@ import java.util.ArrayList;
 public class InfoActivity extends AppCompatActivity {
 
     private ReviewManager reviewManager;
+
+    private SwitchCompat switchTheme;
+    private SharedPreferences prefs;
+    private SharedPreferences.Editor editor;
+    private static final String PREFS_NAME = "ThemePrefs";
+    private static final String PREF_DARK_MODE = "dark_mode";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +55,22 @@ public class InfoActivity extends AppCompatActivity {
         }
 
         reviewManager = ReviewManagerFactory.create(this);
+
+        prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        editor = prefs.edit();
+        
+        switchTheme = findViewById(R.id.switchTheme);
+        boolean isDarkMode = prefs.getBoolean(PREF_DARK_MODE, false);
+        switchTheme.setChecked(isDarkMode);
+        
+        switchTheme.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            int mode = isChecked ? AppCompatDelegate.MODE_NIGHT_YES 
+                                 : AppCompatDelegate.MODE_NIGHT_NO;
+            AppCompatDelegate.setDefaultNightMode(mode);
+            editor.putBoolean(PREF_DARK_MODE, isChecked);
+            editor.apply();
+            recreate();
+        });        
     }
 
     public void onButBarClick(View view) {
@@ -123,5 +148,20 @@ public class InfoActivity extends AppCompatActivity {
             // matter the result, we continue our app flow.
         });
 */    }
+
+    private void applyTheme(int mode) {
+        AppCompatDelegate.setDefaultNightMode(mode);
+    }
+
+    private int getCurrentThemeMode() {
+        return prefs.getBoolean(PREF_DARK_MODE, false) 
+               ? AppCompatDelegate.MODE_NIGHT_YES 
+               : AppCompatDelegate.MODE_NIGHT_NO;
+    }
+
+    private void saveThemePreference(boolean darkMode) {
+        editor.putBoolean(PREF_DARK_MODE, darkMode);
+        editor.apply();
+    }
 
 }
